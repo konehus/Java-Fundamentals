@@ -9,5 +9,6 @@ public class Main {
         System.out.println("Welcome to Java Programming");
 
         System.out.println(Arrays.toString(args));
+        System.out.println("Hey");
     }
 }
