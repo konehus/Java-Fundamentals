@@ -1,0 +1,70 @@
+1.1 Logging
+Logging is the process of writing log messages during the execution of a program to a central place. This logging allows
+you to report and persist error and warning messages as well as info messages (e.g., runtime statistics) so that the messages
+can later be retrieved and analyzed.
+
+This logging API provide a common mechanism to handle all the platform logs and to expose a service interface that can be
+customized by libraries and applications. This way, the JDK platform logs can use the same logging framework as the
+application, and the project dependencies can be reduced.
+
+The Java logging API consists of three core components:
+      -Loggers are responsible for capturing events (called LogRecords) and passing them to the appropriate Appender.
+      -Appenders (also called Handlers in some logging frameworks) are responsible for recording log events to a
+       destination. Appenders use Layouts to format events before sending them to an output.
+      -Layouts (also called Formatters in some logging frameworks) are responsible for converting and formatting
+       the data in a log event. Layouts determine how the data looks when it appears in a log entry.
+
+1.2 Logging in Java
+
+Java contains the Java Logging API. This logging API allows you to configure which message types are written. Individual
+classes can use this logger to write messages to the configured log files.
+The java.util.logging package provides the logging capabilities via the Logger class.
+
+
+1.4 Level
+
+The log levels define the severity of a message. The Level class is used to define which messages should be written to the log.
+The following lists the Log Levels in descending order:
+
+    SEVERE (highest) - serious failure 1000
+    WARNING - potential problem 900
+    INFO - informational messages 800
+    CONFIG - static configuration messages(CPU type) 700
+    FINE - tracing information(recoverable failures, potential performance problems) 500
+    FINER - fairly detailed tracing message(entering, returning or throwing exp) 400
+    FINEST (lowest) - highly detailed tracing message 300
+In addition to that you also have the levels OFF(Integer.MAX_VALUE) and ALL(Integer.MIN_VALUE) to turn the logging off or to log everything.
+
+
+
+1.5 Handler
+
+Each logger can have access to several handlers. The handler receives the log message from the logger and exports it to a certain target.
+A handler can be turned off with the setLevel(Level.OFF) method and turned on with setLevel() method.
+You have several standard handlers. The following list gives some examples.
+    1. ConsoleHandler: Write the log message to console
+    2. FileHandler: Writes the log message to file
+Log levels INFO and higher will be automatically written to the console.
+
+
+
+1.6 Formatter
+
+Each handler’s output can be configured with a formatter
+Available formatter
+    1. SimpleFormatter: Generate all messages as text
+    2. XMLFormatter: Generates XML output for the log messages
+You can also build your own formatter.
+
+
+1.7 Log Manager
+
+The log manager is responsible for creating and managing the logger and the maintenance of the configuration.
+We could set the logging level for a package, or even a set of packages, by calling the LogManager.setLevel(String name, Level level) method.
+
+
+1.8. Best Practices
+
+It is common practice to use the fully qualified name of each class whose activity is being logged as a message category, because this allows
+developers to fine-tune log settings for each class.
+Using the fully qualified class name of your class as the name of your Logger is the approach recommended by the Logging API documentation.

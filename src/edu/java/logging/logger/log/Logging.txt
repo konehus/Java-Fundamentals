@@ -1,0 +1,20 @@
+Mar 10, 2021 3:20:20 AM edu.java.logging.App doSomeThingAndLog
+SEVERE: Severe Log 1
+Mar 10, 2021 3:20:20 AM edu.java.logging.App doSomeThingAndLog
+WARNING: Warning Log 1
+Mar 10, 2021 3:20:20 AM edu.java.logging.App doSomeThingAndLog
+INFO: Info Log 1
+Mar 10, 2021 3:20:20 AM edu.java.logging.App doSomeThingAndLog
+SEVERE: Application will self-destruct
+Mar 10, 2021 3:20:20 AM edu.java.logging.App doSomeThingAndLog
+FINEST: Really not important 1
+Mar 10, 2021 3:20:20 AM edu.java.logging.logger.MyLogger doSomeThingAndLog()
+FINER: RETURN
+Mar 10, 2021 3:20:20 AM edu.java.logging.App doSomeThingAndLog
+SEVERE: Info Log 2
+Mar 10, 2021 3:20:20 AM edu.java.logging.App doSomeThingAndLog
+WARNING: Warning Log 2
+Mar 10, 2021 3:20:20 AM edu.java.logging.App doSomeThingAndLog
+INFO: Info Log 2
+Mar 10, 2021 3:20:20 AM edu.java.logging.App main
+SEVERE: Warning message from henok
