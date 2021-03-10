@@ -1,5 +1,5 @@
 
-Java PrintStream Class![Build Status](https://img.shields.io/badge/Class-PrintStream-blue)
+Java PrintStream Class ![Build Status](https://img.shields.io/badge/Class-PrintStream-blue)
 ============
 
  _Closeable, Flushable, Appendable, AutoCloseable_   ![Build Status](https://img.shields.io/badge/Implemented-Interfaces-pink)
