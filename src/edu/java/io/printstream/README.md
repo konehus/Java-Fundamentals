@@ -16,5 +16,5 @@ It extends the abstract class `OutputStream`.
 
 <br />
 <p align="center">
-    <img width="150" src="https://cdn.programiz.com/sites/tutorial2program/files/java-printstream.png"/>
+    <img  alt=" fjdkl" width="150" src="https://cdn.programiz.com/sites/tutorial2program/files/java-printstream.png"/>
 </p>
