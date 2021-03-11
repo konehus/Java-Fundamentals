@@ -1,4 +1,4 @@
-package edu.java.printstream;
+package edu.java.io.printstream;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -12,6 +12,7 @@ public class PrintStreamTest {
 
     public void write(String word) throws IOException {
 
+        //Open a file to stream output to
         FileOutputStream file = new FileOutputStream(DIRECTORY + FILE);
         PrintStream stream = new PrintStream(file, true, "ISO-8859-15");
 
